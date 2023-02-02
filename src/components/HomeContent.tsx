@@ -10,32 +10,32 @@ export default function HomeContent({ }: Props) {
                 title="Model S"
                 description="Order Online for Touchless Delivery"
                 backgroundImage="https://drive.google.com/uc?id=1t03o-AW2HJsMSsSW6UDaaFkoWtzinsyu"
-                leftButtonText="customer order"
-                rightButtonText="Existing inventory"
+                leftButtonText="Customer Order"
+                rightButtonText="Demo Drive"
                 DownArrows="https://drive.google.com/uc?id=15i5Os5GL77AVoRR1uD9MNbF6aIWDDgkc"
             />
             <HomeSection
                 title="Model 3"
                 description="Order Online for Touchless Delivery"
                 backgroundImage="https://drive.google.com/uc?id=1T-9meSoh1Lg1vP30TdClvYO0ks3gtUYP"
-                leftButtonText="customer order"
-                rightButtonText="Existing inventory"
+                leftButtonText="Customer Order"
+                rightButtonText="Demo Drive"
                 DownArrows="https://drive.google.com/uc?id=15i5Os5GL77AVoRR1uD9MNbF6aIWDDgkc"
             />
             <HomeSection
                 title="Model X"
                 description="Order Online for Touchless Delivery"
                 backgroundImage="https://drive.google.com/uc?id=1k5fGaYFRNVSnLGlOcNvQmi-vOe8GNV86"
-                leftButtonText="customer order"
-                rightButtonText="Existing inventory"
+                leftButtonText="Customer Order"
+                rightButtonText="Demo Drive"
                 DownArrows="https://drive.google.com/uc?id=15i5Os5GL77AVoRR1uD9MNbF6aIWDDgkc"
             />
             <HomeSection
                 title="Model Y"
                 description="Order Online for Touchless Delivery"
                 backgroundImage="https://drive.google.com/uc?id=1C3PKeQKoOmCRPyELeDCuZc2lO2AYKaXH"
-                leftButtonText="customer order"
-                rightButtonText="Existing inventory"
+                leftButtonText="Customer Order"
+                rightButtonText="Demo Drive"
                 DownArrows="https://drive.google.com/uc?id=15i5Os5GL77AVoRR1uD9MNbF6aIWDDgkc"
             />
             <HomeSection
@@ -59,7 +59,7 @@ export default function HomeContent({ }: Props) {
                 description=""
                 backgroundImage="https://drive.google.com/uc?id=1_aO8aPvXVtzPfduk4yhJw4sGskc5KmeO"
                 leftButtonText="Shop now"
-                rightButtonText="learn more"
+                rightButtonText=""
                 DownArrows="https://drive.google.com/uc?id=15i5Os5GL77AVoRR1uD9MNbF6aIWDDgkc"
             />
 

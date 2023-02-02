@@ -1,6 +1,31 @@
-import {atom } from "recoil"
+import { atom } from "recoil"
 
 export const carTypes = atom({
     key: "carTypes",
-    default:  [ "Model S", "Model 3", "Model X", "Model Y",  ]
+    default: [
+        {
+            name: 'Model S',
+            path: '/modelS'
+        },
+        {
+            name: 'Model 3',
+            path: '/model3'
+        },
+        {
+            name: 'Model X',
+            path: '/modelX'
+        },
+        {
+            name: 'Model Y',
+            path: '/modelY'
+        },
+        {
+            name: 'Cybertruck',
+            path: '/cybertruck'
+        },
+        {
+            name: 'Roadster',
+            path: '/roadster'
+        },
+    ]
 })

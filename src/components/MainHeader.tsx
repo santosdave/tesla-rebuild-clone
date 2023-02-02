@@ -3,30 +3,31 @@ import { HomeIcon } from "@heroicons/react/outline";
 import { XCircleIcon } from "@heroicons/react/outline";
 import { carTypes } from '@/interface/car-atom';
 import { useRecoilState } from 'recoil';
+import Link from "next/link";
 type Props = {}
 
 export default function MainHeader({ }: Props) {
     const [cars, setCars] = useRecoilState(carTypes);
     const [openMenu, setOpenMenu] = useState(false);
     return (
-        <div className='flex fixed items-center justify-between top-0 left-0 right-0 z-10 px-5 py-2'>
-            <a>
+        <div className='flex fixed items-center justify-between top-0 left-0 right-0 z-10 px-5 py-1'>
+            <Link href={"/"}>
                 <img className='object-contain' src='https://drive.google.com/uc?id=1gHqC-87TFqAhzC3iZUgprTxxXo0b-m6L' alt='' />
-            </a>
+            </Link>
             <div className='hidden  md:flex flex-1 items-center justify-center space-x-6 '>
                 {cars.map((car, i) => (
-                    <a className='m-3 font-semibold flex-wrap' key={i} href='javascript:void(0)'>{car}</a>
+                    <Link href={car.path} className='m-3 font-semibold flex-wrap' key={i}>{car?.name}</Link>
                 ))}
-                <a className='m-3 font-semibold flex-wrap' href='javascript:void(0)'>Solar Roof</a>
-                <a className='m-3 font-semibold flex-wrap' href='javascript:void(0)'>Solar Panels</a>
+                <Link href={'/solarrof'} className='m-3 font-semibold flex-wrap'>Solar Roof</Link>
+                <Link href={'/solarpanel'} className='m-3 font-semibold flex-wrap'>Solar Panels</Link>
             </div>
             <div className='flex items-center space-x-4'>
-                <a className='m-3 font-semibold flex-wrap' href='javascript:void(0)'>
+                <Link href={'/shop'} className='m-3 font-semibold flex-wrap'>
                     Shop
-                </a>
-                <a className='m-3 font-semibold flex-wrap' href='javascript:void(0)'>
+                </Link>
+                <Link href={'/auth/login'} className='m-3 font-semibold flex-wrap'>
                     Account
-                </a>
+                </Link>
                 <a className='m-3 font-semibold flex-wrap' href='javascript:void(0)' onClick={() => setOpenMenu(true)}>
                     Menu
                 </a>
