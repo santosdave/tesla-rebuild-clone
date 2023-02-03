@@ -1,4 +1,5 @@
 import MainHeader from '@/components/MainHeader'
+import SemiContent from '@/components/Semi/SemiContent'
 import Head from 'next/head'
 import React from 'react'
 
@@ -12,6 +13,7 @@ export default function semi({ }: Props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <MainHeader/>
+            <SemiContent/>
         </>
     )
 }
