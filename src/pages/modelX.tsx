@@ -1,4 +1,5 @@
 import MainHeader from '@/components/MainHeader'
+import ModelXContent from '@/components/ModelX/ModelXContent'
 import Head from 'next/head'
 import React from 'react'
 
@@ -12,6 +13,7 @@ export default function modelX({ }: Props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <MainHeader />
+            <ModelXContent/>
         </>
     )
 }

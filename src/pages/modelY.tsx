@@ -1,4 +1,5 @@
 import MainHeader from '@/components/MainHeader'
+import ModelYContent from '@/components/ModelY/ModelYContent'
 import Head from 'next/head'
 import React from 'react'
 
@@ -12,6 +13,7 @@ export default function modelY({ }: Props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <MainHeader/>
+            <ModelYContent/>
         </>
     )
 }
