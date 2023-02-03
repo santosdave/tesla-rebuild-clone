@@ -27,5 +27,9 @@ export const carTypes = atom({
             name: 'Roadster',
             path: '/roadster'
         },
+        {
+            name: 'Semi',
+            path: '/semi'
+        },
     ]
 })
